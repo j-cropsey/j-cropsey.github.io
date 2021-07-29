@@ -675,21 +675,19 @@
 <input type="checkbox" id="passsct5" name="passsct5" value="passsct5">
 <label for="passsct5"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failsct5" name="failsct5" value="failsct5">
-<label for="failsct5"> Fail</label>&nbsp&nbsp</div>
+<label for="failsct5"> Fail</label>&nbsp&nbsp
+<input type="checkbox" id="nasct5" name="nasct5" value="nasct5">
+<label for="nasct5"> NA</label>&nbsp&nbsp</div>
 
 <div style="float:left"> Gas Pressure Switches: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passsct6" name="passsct6" value="passsct6">
 <label for="passsct6"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failsct6" name="failsct6" value="failsct6">
-<label for="failsct6"> Fail</label>&nbsp&nbsp</div>
+<label for="failsct6"> Fail</label>&nbsp&nbsp
+<input type="checkbox" id="nasct6" name="nasct6" value="nasct6">
+<label for="nasct6"> NA</label>&nbsp&nbsp</div>
 
-<div style="float:left"> LLCs: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="passsct7" name="passsct7" value="passsct7">
-<label for="passsct7"> Pass</label>&nbsp&nbsp
-<input type="checkbox" id="failsct7" name="failsct7" value="failsct7">
-<label for="failsct7"> Fail</label>&nbsp&nbsp</div>
 
 <hr>
 <b> Moisture Sensor Test </b>
@@ -806,7 +804,7 @@
 <input type="checkbox" id="faildt4" name="faildt4" value="faildt4">
 <label for="faildt4"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> T5 & T6 Continuity: </div>
+<div style="float:left"> T4 & T5 Continuity: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passdt5" name="passdt5" value="passdt5">
 <label for="passdt5"> Pass</label>&nbsp&nbsp
@@ -906,159 +904,202 @@
 <b> Fan and Burner Test </b>
 <hr>
 
-<div style="float:left"> Fan Starts ok: </div>
+<div style="float:left"> Fan #1 Starts ok: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt1" name="passfbt1" value="passfbt1">
 <label for="passfbt1"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt1" name="failfbt1" value="failfbt1">
 <label for="failfbt1"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Fan Rotation Correct: </div>
+<div style="float:left"> Fan #1 Rotation Correct: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt2" name="passfbt2" value="passfbt2">
 <label for="passfbt2"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt2" name="failfbt2" value="failfbt2">
 <label for="failfbt2"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Fan Amperage</div>
+<div style="float:left"> Fan #1 Amperage</div>
 <div style="margin-left: 39%"> 
 <input type="text" id="daam1" name="faam1" value="" size="5%" placeholder="Amps">
 <input type="text" id="daam2" name="faam2" value="" size="5%" placeholder="Amps">
 <input type="text" id="daam3" name="faam3" value="" size="5%" placeholder="Amps">
 <label for="faam1"> </label></div>
 
-<div style="float:left"> Fan Smooth and Quiet: </div>
+<div style="float:left"> Fan #1 Smooth and Quiet: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt3" name="passfbt3" value="passfbt3">
 <label for="passfbt3"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt3" name="failfbt3" value="failfbt3">
 <label for="failfbt3"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Fan Smooth and Quiet while Stopping: </div>
+<div style="float:left"> Fan #1 Smooth and Quiet while Stopping: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt4" name="passfbt4" value="passfbt4">
 <label for="passfbt4"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt4" name="failfbt4" value="failfbt4">
 <label for="failfbt4"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Burner #2 Button Active: </div>
+<div style="float:left"> Fan #2A & #2B Starts ok: </div>
+<div style="margin-left: 39%"> 
+<input type="checkbox" id="2passfbt1" name="2passfbt1" value="2passfbt1">
+<label for="2passfbt1"> Pass</label>&nbsp&nbsp
+<input type="checkbox" id="2failfbt1" name="2failfbt1" value="2failfbt1">
+<label for="2failfbt1"> Fail</label>&nbsp&nbsp</div>
+ 
+<div style="float:left"> Fan #2A & #2B Rotation Correct: </div>
+<div style="margin-left: 39%"> 
+<input type="checkbox" id="2passfbt2" name="2passfbt2" value="2passfbt2">
+<label for="2passfbt2"> Pass</label>&nbsp&nbsp
+<input type="checkbox" id="2failfbt2" name="2failfbt2" value="2failfbt2">
+<label for="2failfbt2"> Fail</label>&nbsp&nbsp</div>
+ 
+<div style="float:left"> Fan #2A & #2B Amperage</div>
+<div style="margin-left: 39%"> 
+<input type="text" id="2daam1" name="2faam1" value="" size="5%" placeholder="Amps">
+<input type="text" id="2daam2" name="2faam2" value="" size="5%" placeholder="Amps">
+<input type="text" id="2daam3" name="2faam3" value="" size="5%" placeholder="Amps">
+<label for="faam1"> </label></div>
+
+<div style="float:left"> Fan #2A & #2B Smooth and Quiet: </div>
+<div style="margin-left: 39%"> 
+<input type="checkbox" id="2passfbt3" name="2passfbt3" value="passfbt3">
+<label for="2passfbt3"> Pass</label>&nbsp&nbsp
+<input type="checkbox" id="2failfbt3" name="2failfbt3" value="2failfbt3">
+<label for="2failfbt3"> Fail</label>&nbsp&nbsp</div>
+ 
+<div style="float:left"> Fan #2A & #2B Smooth and Quiet while Stopping: </div>
+<div style="margin-left: 39%"> 
+<input type="checkbox" id="2passfbt4" name="2passfbt4" value="2passfbt4">
+<label for="2passfbt4"> Pass</label>&nbsp&nbsp
+<input type="checkbox" id="2failfbt4" name="2failfbt4" value="2failfbt4">
+<label for="2failfbt4"> Fail</label>&nbsp&nbsp</div>
+ 	
+	
+<div style="float:left"> Burner #1 Button Active: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt5" name="passfbt5" value="passfbt5">
 <label for="passfbt5"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt5" name="failfbt5" value="failfbt5">
 <label for="failfbt5"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Burner #2 Start: </div>
+<div style="float:left"> Burner #1 Start: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt6" name="passfbt6" value="passfbt6">
 <label for="passfbt6"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt6" name="failfbt6" value="failfbt6">
 <label for="failfbt6"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Burner #2 Purging: </div>
+<div style="float:left"> Burner #1 Purging: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt7" name="passfbt7" value="passfbt7">
 <label for="passfbt7"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt7" name="failfbt7" value="failfbt7">
 <label for="failfbt7"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Solenoids or POCV ok: </div>
+<div style="float:left"> #1 Solenoids click/FPGV/POC ok: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt8" name="passfbt8" value="passfbt8">
 <label for="passfbt8"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt8" name="failfbt8" value="failfbt8">
 <label for="failfbt8"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Burner #2 Trial for Ignition ok: </div>
+<div style="float:left"> Burner #1 Trial for Ignition ok: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt9" name="passfbt9" value="passfbt9">
 <label for="passfbt9"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt9" name="failfbt9" value="failfbt9">
 <label for="failfbt9"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Actuator Moving ok: </div>
+<div style="float:left"> #1 Actuator Moving ok: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt10" name="passfbt10" value="passfbt10">
 <label for="passfbt10"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt10" name="failfbt10" value="failfbt10">
 <label for="failfbt10"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Leak Test Inside ok: </div>
+<div style="float:left"> #1 Leak Test ok: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt11" name="passfbt11" value="passfbt11">
 <label for="passfbt11"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt11" name="failfbt11" value="failfbt11">
 <label for="failfbt11"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Re-Ignites ok: </div>
+<div style="float:left"> #1 Re-Ignites ok: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt12" name="passfbt12" value="passfbt12">
 <label for="passfbt12"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt12" name="failfbt12" value="failfbt12">
 <label for="failfbt12"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Loss of Flame Fault ok: </div>
+<div style="float:left"> #1 Loss of Flame Fault ok: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt13" name="passfbt13" value="passfbt13">
 <label for="passfbt13"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt13" name="failfbt13" value="failfbt13">
 <label for="failfbt13"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Bottom Burner Active: </div>
+<div style="float:left"> Burner #2 Button Active: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt14" name="passfbt14" value="passfbt14">
 <label for="passfbt14"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt14" name="failfbt14" value="failfbt14">
 <label for="failfbt14"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Bottom Burner Start: </div>
+<div style="float:left"> Burner #2 Start: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt15" name="passfbt15" value="passfbt15">
 <label for="passfbt15"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt15" name="failfbt15" value="failfbt15">
 <label for="failfbt15"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Bottom Burner Purging: </div>
+<div style="float:left"> Burner #2 Purging: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt16" name="passfbt16" value="passfbt16">
 <label for="passfbt16"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt16" name="failfbt16" value="failfbt16">
 <label for="failfbt16"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Bottom Solenoids and POCV ok: </div>
+<div style="float:left"> #2 Solenoids/FPGV/POC ok: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt17" name="passfbt17" value="passfbt17">
 <label for="passfbt17"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt17" name="failfbt17" value="failfbt17">
 <label for="failfbt17"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Bottom Burner Trial for Ignition ok: </div>
+<div style="float:left"> Burner #2 Trial for Ignition ok: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt18" name="passfbt18" value="passfbt18">
 <label for="passfbt18"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt18" name="failfbt18" value="failfbt18">
 <label for="failfbt18"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Bottom Actuator Moving ok: </div>
+<div style="float:left"> #2 Actuator Moving ok: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt19" name="passfbt19" value="passfbt19">
 <label for="passfbt19"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt19" name="failfbt19" value="failfbt19">
 <label for="failfbt19"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Bottom Burner Leak Test: </div>
+<div style="float:left"> #2 Leak Test ok: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt20" name="passfbt20" value="passfbt20">
 <label for="passfbt20"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt20" name="failfbt20" value="failfbt20">
 <label for="failfbt20"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Bottom Burner Loss of Flame Fault ok: </div>
+<div style="float:left"> #2 Re-Ignites ok: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt21" name="passfbt21" value="passfbt21">
 <label for="passfbt21"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt21" name="failfbt21" value="failfbt21">
-<label for="failfbt21"> Fail</label>&nbsp&nbsp</div>
+<label for="failfbt21"> Fail</label>&nbsp&nbsp</div>	
+	
+<div style="float:left"> #2 Loss of Flame Fault ok: </div>
+<div style="margin-left: 39%"> 
+<input type="checkbox" id="passfbt22" name="passfbt22" value="passfbt22">
+<label for="passfbt22"> Pass</label>&nbsp&nbsp
+<input type="checkbox" id="failfbt22" name="failfbt21" value="failfbt22">
+<label for="failfbt22"> Fail</label>&nbsp&nbsp</div>
  
 
 <hr>
@@ -1080,7 +1121,7 @@
 <input type="checkbox" id="cooldownokct3" name="cooldownokct3" value="cooldownokct3">
 <label for="cooldownokct3"> Cooldown ok</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Burner #2 Flame Loss Fault: </div>
+<div style="float:left"> Burner Flame Loss Fault: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="cooldownokct4" name="cooldownokct4" value="cooldownokct4">
 <label for="cooldownokct4"> Cooldown ok</label>&nbsp&nbsp</div>
@@ -1184,7 +1225,7 @@
 #photoyesno{display:inline-block; text-align: center; width:0%;text-decoration: underline;}
 </style>
 <br>
--->
+ title for columns does not align correctly-->
  
 
 <div style="float:left"> &nbsp Infeed Rotary Switch</div>
@@ -1243,7 +1284,7 @@
 <label for="DCPSSN"> </label>&nbsp
 <input type="checkbox" id=pic7" name="pic7" value="pic7">&nbspPhoto</div>
  
-<div style="float:left">&nbsp VFD, Metering</div>
+<div style="float:left">&nbsp VFD</div>
 <div style="margin-left: 39%"> 
 <input type="text" id="VFDDC" name="VFDDC" value="" size="22%" placeholder="S/N">
 <label for="VFDDC"> </label>&nbsp
@@ -1251,7 +1292,7 @@
 <label for="VFDSN"> </label>&nbsp
 <input type="checkbox" id=pic8" name="pic8" value="pic8">&nbspPhoto</div>
  
-<div style="float:left">&nbsp LA Motor</div>
+<div style="float:left">&nbsp FILL Motor</div>
 <div style="margin-left: 39%"> 
 <input type="text" id="FMDC" name="FMDC" value="" size="22%" placeholder="S/N">
 <label for="FMDC"> </label>&nbsp
@@ -1315,46 +1356,6 @@
 <label for="IRSSN"> </label>&nbsp
 <input type="checkbox" id=pic16" name="pic16" value="pic16">&nbspPhoto</div>
  
-<div style="float:left">&nbsp Fan #2A Motor Motor</div>
-<div style="margin-left: 39%"> 
-<input type="text" id="IRSDC2" name="IRSDC2" value="" size="22%" placeholder="S/N">
-<label for="IRSDC2"> </label>&nbsp
-<input type="text" id="IRSSN2" name="IRSSN2" value="" size="14%" placeholder="DC">
-<label for="IRSSN2"> </label>&nbsp
-<input type="checkbox" id=pic16" name="pic16" value="pic16">&nbspPhoto</div>
-	
-<div style="float:left">&nbsp Fan #2B Motor</div>
-<div style="margin-left: 39%"> 
-<input type="text" id="IRSDC3" name="IRSDC3" value="" size="22%" placeholder="S/N">
-<label for="IRSDC3"> </label>&nbsp
-<input type="text" id="IRSSN3" name="IRSSN3" value="" size="14%" placeholder="DC">
-<label for="IRSSN3"> </label>&nbsp
-<input type="checkbox" id=pic16" name="pic16" value="pic16">&nbspPhoto</div>
-							   
-<div style="float:left">&nbsp Fan #1</div>
-<div style="margin-left: 39%"> 
-<input type="text" id="IRSDC4" name="IRSDC4" value="" size="22%" placeholder="S/N">
-<label for="IRSDC4"> </label>&nbsp
-<input type="text" id="IRSSN4" name="IRSSN4" value="" size="14%" placeholder="DC">
-<label for="IRSSN4"> </label>&nbsp
-<input type="checkbox" id=pic16" name="pic16" value="pic16">&nbspPhoto</div>
-	
-<div style="float:left">&nbsp Fan #2A</div>
-<div style="margin-left: 39%"> 
-<input type="text" id="IRSDC5" name="IRSDC5" value="" size="22%" placeholder="S/N">
-<label for="IRSDC5"> </label>&nbsp
-<input type="text" id="IRSSN5" name="IRSSN5" value="" size="14%" placeholder="DC">
-<label for="IRSSN5"> </label>&nbsp
-<input type="checkbox" id=pic16" name="pic16" value="pic16">&nbspPhoto</div>
-							   
-<div style="float:left">&nbsp Fan #2B</div>
-<div style="margin-left: 39%"> 
-<input type="text" id="IRSDC6" name="IRSDC6" value="" size="22%" placeholder="S/N">
-<label for="IRSDC6"> </label>&nbsp
-<input type="text" id="IRSSN6" name="IRSSN6" value="" size="14%" placeholder="DC">
-<label for="IRSSN6"> </label>&nbsp
-<input type="checkbox" id=pic16" name="pic16" value="pic16">&nbspPhoto</div>
-							   
 <div style="float:left">&nbsp Actuator #1</div>
 <div style="margin-left: 39%"> 
 <input type="text" id="A1DC" name="A1DC" value="" size="22%" placeholder="S/N">
@@ -1395,7 +1396,7 @@
 <label for="R1SN"> </label>&nbsp
 <input type="checkbox" id=pic21" name="pic21" value="pic21">&nbspPhoto</div>
  
-<div style="float:left">&nbsp Secondary Regulator #1</div>
+<div style="float:left">&nbsp Regulator #2</div>
 <div style="margin-left: 39%"> 
 <input type="text" id="SR1DC" name="SR1DC" value="" size="22%" placeholder="S/N">
 <label for="SR1DC"> </label>&nbsp
@@ -1403,7 +1404,15 @@
 <label for="SR1SN"> </label>&nbsp
 <input type="checkbox" id=pic22" name="pic22" value="pic22">&nbspPhoto</div>
  
-<div style="float:left">&nbsp Secondary Regulator #2</div>
+<div style="float:left">&nbsp Low Pressure Regulator #1</div>
+<div style="margin-left: 39%"> 
+<input type="text" id="SR2DC1" name="SR2DC1" value="" size="22%" placeholder="S/N">
+<label for="SR2DC1"> </label>&nbsp
+<input type="text" id="SR2SN1" name="SR2SN1" value="" size="14%" placeholder="DC">
+<label for="SR2SN1"> </label>&nbsp
+<input type="checkbox" id=pic23" name="pic23" value="pic23">&nbspPhoto</div>							   
+							   
+<div style="float:left">&nbsp Low Pressure Regulator #2</div>
 <div style="margin-left: 39%"> 
 <input type="text" id="SR2DC" name="SR2DC" value="" size="22%" placeholder="S/N">
 <label for="SR2DC"> </label>&nbsp
@@ -1411,7 +1420,23 @@
 <label for="SR2SN"> </label>&nbsp
 <input type="checkbox" id=pic23" name="pic23" value="pic23">&nbspPhoto</div>
  
-<div style="float:left">&nbsp Fenwall #1</div>
+<div style="float:left">&nbsp LPGS #1</div>
+<div style="margin-left: 39%"> 
+<input type="text" id="SR2DClp" name="SR2DClp" value="" size="22%" placeholder="S/N">
+<label for="SR2DClp"> </label>&nbsp
+<input type="text" id="SR2SNlp" name="SR2SNlp" value="" size="14%" placeholder="DC">
+<label for="SR2SNlp"> </label>&nbsp
+<input type="checkbox" id=pic23" name="pic23" value="pic23">&nbspPhoto</div>
+	
+<div style="float:left">&nbsp LPGS #2</div>
+<div style="margin-left: 39%"> 
+<input type="text" id="SR2DClp2" name="SR2DClp2" value="" size="22%" placeholder="S/N">
+<label for="SR2DClp2"> </label>&nbsp
+<input type="text" id="SR2SNlp2" name="SR2SNlp2" value="" size="14%" placeholder="DC">
+<label for="SR2SNlp2"> </label>&nbsp
+<input type="checkbox" id=pic23" name="pic23" value="pic23">&nbspPhoto</div>
+							   
+<div style="float:left">&nbsp Fireye #1</div>
 <div style="margin-left: 39%"> 
 <input type="text" id="F1DC" name="F1DC" value="" size="22%" placeholder="S/N">
 <label for="F1DC"> </label>&nbsp
@@ -1419,7 +1444,7 @@
 <label for="F1SN"> </label>&nbsp
 <input type="checkbox" id=pic24" name="pic24" value="pic24">&nbspPhoto</div>
  
-<div style="float:left">&nbsp Fenwall #2</div>
+<div style="float:left">&nbsp Fireye #2</div>
 <div style="margin-left: 39%"> 
 <input type="text" id="F2DC" name="F2DC" value="" size="22%" placeholder="S/N">
 <label for="F2DC"> </label>&nbsp
