@@ -1,7 +1,7 @@
 <!DOCTYPE>
 <!-- text document -->
 <html>
-<body onload="recoverInputs(document.forms.checklistform,retrieveCookie('formdata'),true)" onunload="setCookie('formdata',getFormString(document.forms.checklistform,true), 1209600)">
+<body onload="recoverInputs(document.forms.checklistform,retrieveCookie('deltadata'),true)" onunload="setCookie('deltadata',getFormString(document.forms.checklistform,true), 1209600)">
 
 <!--<center><img src="C:\Users\joelc\Pictures\header.png" alt="header" style="width:94%;"></center>-->
 <center><img src="https://user-images.githubusercontent.com/85181898/120836394-2336ed80-c52b-11eb-9bac-33c59cea5fb8.png" alt="header" style="width:94%;"></center>
@@ -17,7 +17,7 @@
 <p><label for="serialnumber">Serial Number: </label>
 <input type="text" id="serialnumber" name="serialnumberdryer" maxlength="7" size="13%" placeholder="2021###"></p>
 <p><label for=:modelnumber">Model Number:</label>
-<input type="text" id="modelnumber" name="modelnumber" size="12%" placeholder="E###"></p>
+<input type="text" id="modelnumber" name="modelnumber" size="12%" placeholder="D####"></p>
 <p><label for="dealer">Dealer:</label>
 <input type="text" id="dealer" name="dealer" size="16%" placeholder="Dealer"></p>
 
@@ -38,7 +38,9 @@
 <input type="checkbox" id="lp" name="lp" value="LP">
 <label for="lp"> LP</label>&nbsp&nbsp
 <input type="checkbox" id="ng" name="ng" value="NG">
-<label for="ng"> NG</label></div>
+<label for="ng"> NG</label>
+<input type="checkbox" id="fo" name="fo" value="FO">
+<label for="fo"> Fuel Oil</label></div>
 
 <div style="float:left"> Control Type</div> 
 <div style="margin-left: 39%">
@@ -84,32 +86,44 @@
 <input type="checkbox" id="test" name="test" value="test">
 <label for="test"> Test</label></div>
 
-<div style="float:left">Destination </div>
-<div style="margin-left: 39%">
-<input type="checkbox" id="domestic" name="domestic" value="domestic">
-<label for="domestic"> Domestic</label>
-<input type="checkbox" id="canada" name="canada" value="canada">
-<label for="canada"> Canada</label>
-<input type="checkbox" id="export" name="export" value="export">
-<label for="export"> Export</label></div>
-
 <div style="float:left"> Blower Motor Control</div> 
 <div style="margin-left: 39%">
 <input type="checkbox" id="directstart" name="directstart" value="directstart">
 <label for="directstart"> Direct Start</label>&nbsp&nbsp
+<input type="checkbox" id="softs" name="softs" value="softs">
+<label for="softs"> Soft Starter</label>&nbsp&nbsp
 <input type="checkbox" id="mcvfd" name="mcvfd" value="mcvfd">
 <label for="mcvfd"> MC VFD</label>&nbsp&nbsp
 <input type="checkbox" id="customervfd" name="customervfd" value="customervfd">
 <label for="customervfd"> Customer VFD</label></div>
 
+<div style="float:left">Sampler</div> 
+<div style="margin-left: 39%">
+<input type="checkbox" id="sampleryes" name="sampleryes" value="sampleryes">
+<label for="sampleryes"> Yes</label>&nbsp&nbsp
+<input type="checkbox" id="samplerno" name="samplerno" value="samplerno">
+<label for="samplerno"> No</label></div>	
+	
+<div style="float:left"> Discharge Type</div>
+<div style="margin-left: 39%">
+<input type="checkbox" id="augerdt" name="augerdt" value="augerdt">
+<label for="augerdt"> Auger</label>&nbsp&nbsp
+<input type="checkbox" id="conveyordt" name="conveyordt" value="conveyordt">
+<label for="conveyordt"> Conveyor</label>
+<input type="checkbox" id="customerdt" name="customerdt" value="customerdt">
+<label for="customerdt"> Customer</label></div>	
+
 <div style="float:left"> Discharge Auger Length</div> 
 <div style="margin-left: 39%">
-<input type ="text" id="dischargeaugerlength" name="dischargeaugerlength" size="5%" placeholder="Feet">
-Drag Conveyor
-<input type="checkbox" id="yesdbc1" name="yesdbc1" value="yesdbc1">
-<label for="yesdbc1"> Yes</label>&nbsp&nbsp
-<input type="checkbox" id="nodbc1" name="nodbc1" value="nodbc1">
-<label for="nodbc1"> No</label></div>
+<input type ="text" id="dischargeaugerlength" name="dischargeaugerlength" size="10%" placeholder="Feet">
+</div>
+
+<div style="float:left"> Hopper Type</div>
+<div style="margin-left: 39%">
+<input type="checkbox" id="levelht" name="levelht" value="levelht">
+<label for="levelht"> Level Auger</label>&nbsp&nbsp
+<input type="checkbox" id="cfgf" name="cfgf" value="cfgf">
+<label for="cfgf"> Center Fill Gravity Fed</label></div>		
 
 <div style="float:left"> QT Matches Decals and Metal Plates</div>
 <div style="margin-left: 39%">
@@ -118,6 +132,14 @@ Drag Conveyor
 <input type="checkbox" id="nodbc2" name="nodbc2" value="nodbc2">
 <label for="nodbc2"> No</label></div>
 
+<div style="float:left">Destination </div>
+<div style="margin-left: 39%">
+<input type="checkbox" id="domestic" name="domestic" value="domestic">
+<label for="domestic"> Domestic</label>
+<input type="checkbox" id="canada" name="canada" value="canada">
+<label for="canada"> Canada</label>
+<input type="checkbox" id="export" name="export" value="export">
+<label for="export"> Export</label></div>
 
 <hr>
 <b> Walk Around Inspection  </b>
@@ -1406,13 +1428,13 @@ Drag Conveyor
 <div class="noPrint">
 <!--<center> these buttons for manual save and load from cookies. now in onload & onunload in body
 <input type="reset"  class="button-cookie" style="width:32.3%" name="g">
-<input type="button" class="button-cookie" style="width:32.3%" value="Save" onclick="setCookie('formdata',getFormString(this.form,true), 1209600);">
-<input type="button" class="button-cookie" style="width:32.3%" value="Recover" onclick="recoverInputs(this.form,retrieveCookie('formdata'),true);">
+<input type="button" class="button-cookie" style="width:32.3%" value="Save" onclick="setCookie('deltadata',getFormString(this.form,true), 1209600);">
+<input type="button" class="button-cookie" style="width:32.3%" value="Recover" onclick="recoverInputs(this.form,retrieveCookie('deltadata'),true);">
 </center>-->
 	
 <center>
 <input type="reset"  class="button-cookie" style="width:48.6%" name="g">
-<input type="button" class="button-cookie" style="width:48.6%" value="Submit Quality Checklist" onclick="setCookie('formdata',getFormString(this.form,true), 1209600); download();">
+<input type="button" class="button-cookie" style="width:48.6%" value="Submit Quality Checklist" onclick="setCookie('deltadata',getFormString(this.form,true), 1209600); download();">
 </center>
 
 <center><input type="file" id="fileToLoad" class="btn-file-upload-load" value="Select Quality Form From File" style="width:97.5%; margin-top: 3px;" onchange="loadFileAsText()";></center>
