@@ -1,7 +1,7 @@
 <!DOCTYPE>
 <!-- text document -->
 <html>
-<body onload="recoverInputs(document.forms.checklistform,retrieveCookie('towerdata'),true)" onunload="setCookie('towerdata',getFormString(document.forms.checklistform,true), 1209600)">
+<body onload="recoverInputs(document.forms.checklistform,retrieveCookie('formdata'),true)" onunload="setCookie('formdata',getFormString(document.forms.checklistform,true), 1209600)">
 
 <!--<center><img src="C:\Users\joelc\Pictures\header.png" alt="header" style="width:94%;"></center>-->
 <center><img src="https://user-images.githubusercontent.com/85181898/120836394-2336ed80-c52b-11eb-9bac-33c59cea5fb8.png" alt="header" style="width:94%;"></center>
@@ -1124,7 +1124,7 @@
 <label for="IRSSN"> </label>&nbsp
 <input type="checkbox" id=pic16" name="pic16" value="pic16">&nbspPhoto</div>
  
-<div style="float:left">&nbsp Sweep Gearbox, Center</div>
+<div style="float:left">&nbsp Sweep Gearbox,Center</div>
 <div style="margin-left: 39%"> 
 <input type="text" id="A1DC" name="A1DC" value="" size="22%" placeholder="S/N">
 <label for="A1DC"> </label>&nbsp
@@ -1199,13 +1199,13 @@
 <div class="noPrint">
 <!--<center> these buttons for manual save and load from cookies. now in onload & onunload in body
 <input type="reset"  class="button-cookie" style="width:32.3%" name="g">
-<input type="button" class="button-cookie" style="width:32.3%" value="Save" onclick="setCookie('towerdata',getFormString(this.form,true), 1209600);">
-<input type="button" class="button-cookie" style="width:32.3%" value="Recover" onclick="recoverInputs(this.form,retrieveCookie('towerdata'),true);">
+<input type="button" class="button-cookie" style="width:32.3%" value="Save" onclick="setCookie('formdata',getFormString(this.form,true), 1209600);">
+<input type="button" class="button-cookie" style="width:32.3%" value="Recover" onclick="recoverInputs(this.form,retrieveCookie('formdata'),true);">
 </center>-->
 	
 <center>
 <input type="reset"  class="button-cookie" style="width:48.6%" name="g">
-<input type="button" class="button-cookie" style="width:48.6%" value="Submit Quality Checklist" onclick="setCookie('towerdata',getFormString(this.form,true), 1209600); download();">
+<input type="button" class="button-cookie" style="width:48.6%" value="Submit Quality Checklist" onclick="setCookie('formdata',getFormString(this.form,true), 1209600); download();">
 </center>
 
 <center><input type="file" id="fileToLoad" class="btn-file-upload-load" value="Select Quality Form From File" style="width:97.5%; margin-top: 3px;" onchange="loadFileAsText()";></center>
@@ -1565,7 +1565,7 @@ button,
 }
 
 input[type=checkbox]{
-    background-color: #C0C0C0;
+    background-color: #DDD;
     border-radius: 2px;
     appearance: none;
     -webkit-appearance: none;
@@ -1574,7 +1574,7 @@ input[type=checkbox]{
     height: 15px;
     cursor: pointer;
     position: relative;
-    top: 4px;
+    top: 5px;
 }
 
 input[type=checkbox]:checked
