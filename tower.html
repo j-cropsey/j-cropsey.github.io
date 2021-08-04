@@ -54,8 +54,6 @@
 <div style="margin-left: 39%">
 <input type="checkbox" id="aluminum" name="aluminum" value="aluminum">
 <label for="aluminum"> Aluminum</label>&nbsp&nbsp
-<input type="checkbox" id="galvanized" name="galvanized" value="galvanized">
-<label for="galvanized"> Galvanized</label>
 <input type="checkbox" id="stainlesssteel" name="stainlesssteel" value="stainlesssteel">
 <label for="stainlesssteel"> Stainless Steel</label></div>
 
@@ -63,8 +61,8 @@
 <div style="margin-left: 39%">
 <input type="checkbox" id="standard" name="standard" value="standard">
 <label for="standard"> Standard</label>&nbsp&nbsp
-<input type="checkbox" id="canola" name="canola" value="canola">
-<label for="canola"> Canola</label></div>
+<input type="checkbox" id="otherperf" name="otherperf" value="otherperf">
+<label for="otherperf"> Other</label></div>
 
 <div style="float:left"> Moisture Control</div> 
 <div style="margin-left: 39%">
@@ -96,7 +94,9 @@
 <input type="checkbox" id="mcvfd" name="mcvfd" value="mcvfd">
 <label for="mcvfd"> MC VFD</label>&nbsp&nbsp
 <input type="checkbox" id="customervfd" name="customervfd" value="customervfd">
-<label for="customervfd"> Customer VFD</label></div>
+<label for="customervfd"> Customer VFD</label>
+<input type="checkbox" id="softstartvfd" name="softstartvfd" value="softstartvfd">
+<label for="softstartvfd"> Soft Start</label></div>
 
 <div style="float:left"> MC Trax</div>
 <div style="margin-left: 39%">
@@ -197,6 +197,21 @@
 <input type="text" id="stowedcom" name="stowedcom" value="" size="40%">
 <label for="stowedcom"> </label></div>
 
+<div style="float:left"> Upper Sections Correct?:</div>
+<div style="margin-left: 39%"> 
+<input type="checkbox" id="yesusc1" name="yesusc1" value="yesusc1">
+<label for="yesusc1"> Yes</label>&nbsp&nbsp
+<input type="checkbox" id="nousc1" name="nousc1" value="nousc1">
+<label for="nousc1"> No</label>&nbsp
+<input type="text" id="usccom" name="usccom" value="" size="40%">
+<label for="usccom"> </label></div>
+	
+<div style="float:left"> Pass Through Plate Correct?:</div>
+<div style="margin-left: 39%"> 
+<input type="checkbox" id="yesptpc" name="yesptpc" value="yesptpc">
+<label for="yesptpc"> Yes</label>&nbsp&nbsp
+<input type="text" id="comptp" name="comptp" value="" size="40%">
+<label for="comptp"> </label></div>
 
 <div style="float:left"> ETL Stickers:</div>
 <div style="margin-left: 39%"> 
@@ -232,13 +247,13 @@
 <label for="lvcabinet2"> LV Cabinet</label>&nbsp&nbsp
 <input type="checkbox" id="hvcabinet2" name="hvcabinet2" value="hvcabinet2">
 <label for="hvcabinet2"> HV Cabinet</label>&nbsp</div>
-
-<div style="float:left"> Pulley size correct:</div>
+	
+<div style="float:left"> Safety Decals Checked:</div>
 <div style="margin-left: 39%"> 
-<input type="checkbox" id="yeswai8" name="yeswai8" value="yeswai8">
-<label for="yeswai8"> Yes</label>&nbsp&nbsp
-<input type="checkbox" id="nowai8" name="nowai8" value="nowai8">
-<label for="nowai8"> No</label>&nbsp</div>
+<input type="checkbox" id="yessdcc" name="yessdcc" value="yessdcc">
+<label for="yessdc"> Yes</label>&nbsp&nbsp
+</div>
+
 	
 <hr>
 <b>Blower and Burner Inspection</b>
@@ -262,16 +277,7 @@
 <input type="text" id="vaporizorinstalledcorrectlycom" name="vaporizorinstalledcorrectlycom" value="" size="40%">
 <label for="vaporizerinstalledcorrectlycom"> </label></div>
 
-<div style="float:left"> Plenum Probes Mounted Correctly:</div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="yesbbi3" name="yesbbi3" value="yesbbi3">
-<label for="yesbbi3"> Yes</label>&nbsp&nbsp
-<input type="checkbox" id="nobbi3" name="nobbi3" value="nobbi3">
-<label for="nobbi3"> No</label>&nbsp
-<input type="text" id="ppmccom" name="ppmccom" value="" size="40%">
-<label for="ppmccom"> </label></div>
-
-<div style="float:left"> Blower Installed Correctly:</div>
+<div style="float:left"> Blower Motor Installed Correctly:</div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="yesbbi4" name="yesbbi4" value="yesbbi4">
 <label for="yesbbi4"> Yes</label>&nbsp&nbsp
@@ -279,7 +285,25 @@
 <label for="nobbi4"> No</label>&nbsp
 <input type="text" id="blowerinstalledcorrectlycom" name="blowerinstalledcorrectlycom" value="" size="40%">
 <label for="blowerinstalledcorrectlycom"> </label></div>
+	
+<div style="float:left"> Blower Motor Leads Correct:</div>
+<div style="margin-left: 39%"> 
+<input type="checkbox" id="yeslead" name="yeslead" value="yeslead">
+<label for="yeslead4"> Yes</label>&nbsp&nbsp
+<input type="checkbox" id="nolead" name="nolead" value="nolead">
+<label for="nolead"> No</label>&nbsp
+<input type="text" id="leadcom" name="leadcom" value="" size="40%">
+<label for="leadcom"> </label></div>
 
+<div style="float:left"> Blower Pulley Size Correct:</div>
+<div style="margin-left: 39%"> 
+<input type="checkbox" id="yeswai8" name="yeswai8" value="yeswai8">
+<label for="yeswai8"> Yes</label>&nbsp&nbsp
+<input type="checkbox" id="nowai8" name="nowai8" value="nowai8">
+<label for="nowai8"> No</label>&nbsp
+<input type="text" id="psize" name="psize" value="" size="40%">
+<label for="psize"> </label></div>	
+	
 <hr>
 <b> Motor Protectors </b>
 <hr>
@@ -320,7 +344,7 @@
 <input type="text" id="lbcom" name="lbcom" value="" size="40%" >
 <label for="lbcom"> </label></div>
 	
-<div style="float:left"> VFD Parameters loaded and Backed up to Keypad:</div>
+<div style="float:left"> VFD Parameters loaded and Backed up:</div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="yesvfd2" name="yesvfd2" value="yesvfd2">
 <label for="yesvfd2"> Yes</label>&nbsp&nbsp
@@ -688,6 +712,12 @@
 <input type="checkbox" id="nasct6" name="nasct6" value="nasct6">
 <label for="nasct6"> NA</label>&nbsp&nbsp</div>
 
+<div style="float:left"> Linear Limits (section): </div>
+<div style="margin-left: 39%"> 
+<input type="checkbox" id="passlls" name="passlls" value="passlls">
+<label for="passlls"> Pass</label>&nbsp&nbsp
+<input type="checkbox" id="faillls" name="faillls" value="faillls">
+<label for="faillls"> Fail</label>&nbsp&nbsp</div>	
 
 <hr>
 <b> Moisture Sensor Test </b>
@@ -786,6 +816,13 @@
 <input type="checkbox" id="faildt3" name="faildt3" value="faildt3">
 <label for="faildt3"> Fail</label>&nbsp&nbsp</div>
  
+<div style="float:left"> Discharge Sweep Doesn't Drag on Floor: </div>
+<div style="margin-left: 39%"> 
+<input type="checkbox" id="passddf" name="passddf" value="passddf">
+<label for="passddf"> Pass</label>&nbsp&nbsp
+<input type="checkbox" id="faildt3" name="faildt3" value="faildt3">
+<label for="faildt3"> Fail</label>&nbsp&nbsp</div>
+	
 <div style="float:left"> Discharge Sweep Amperage</div>
 <div style="margin-left: 39%"> 
 <input type="text" id="daa" name="daa" value="" size="13" placeholder="Amps">
@@ -885,13 +922,6 @@
 <label for="passfbt4"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt4" name="failfbt4" value="failfbt4">
 <label for="failfbt4"> Fail</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Leak Test: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="passfbt5" name="passfbt5" value="passfbt5">
-<label for="passfbt5"> Pass</label>&nbsp&nbsp
-<input type="checkbox" id="failfbt5" name="failfbt5" value="failfbt5">
-<label for="failfbt5"> Fail</label>&nbsp&nbsp</div>
  
 <div style="float:left"> Proper Shutdown: </div>
 <div style="margin-left: 39%"> 
