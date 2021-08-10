@@ -1400,7 +1400,7 @@ Drag Conveyor
 
 <center><input type="file" id="fileToLoad" class="btn-file-upload-load" value="Select Quality Form From File" style="width:97.5%; margin-top: 3px;" onchange="loadFileAsText()";></center>
 <center><input type="button" value="Load Values" class="button-cookie-load" style="width:97.5%" onclick="recoverInputs(this.form,textFromFileLoaded,true);"><center>
-<!--<input type="button" value="Download Images" onclick="downloadimages()" class="button-cookie-load" style="width:97.5%"> button to download the photos uploaded-->
+<input type="button" value="Download Images" onclick="downloadimages()" class="button-cookie-load" style="width:97.5%"> <!--button to download the photos uploaded-->
 
 </div>
 </form>
@@ -1440,10 +1440,11 @@ function download(filename, text) {
 	
 function downloadimages(i=0) {
 	
+let sernum = "inputs["serialnumberdryer"].value";
   while(i < 9) {
     var picturenumber = i+1;
     var a = document.createElement('a');
-    if(i==0 && document.getElementById("img_file").value != "")  {a.href=$('#img_url')[0].src;  a.download = "Picture 1";}
+    if(i==0 && document.getElementById("img_file").value != "")  {a.href=$('#img_url')[0].src;  a.download = "'sernum' + 'Picture 1'";}
     if(i==1 && document.getElementById("img_filea").value != "") {a.href=$('#img_urla')[0].src; a.download = "Picture 2";}
     if(i==2 && document.getElementById("img_fileb").value != "") {a.href=$('#img_urlb')[0].src; a.download = "Picture 3";}
     if(i==3 && document.getElementById("img_filec").value != "") {a.href=$('#img_urlc')[0].src; a.download = "Picture 4";}
