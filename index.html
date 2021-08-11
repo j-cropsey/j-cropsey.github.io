@@ -13,14 +13,42 @@
   <a href="/delta">
 <button class="button"> Delta</button>
   </a>&nbsp&nbsp
+  <div class="ball">
 <a href="/legacy">
 <button class="button"> Legacy</button>
-  </a>&nbsp&nbsp
+   </a>&nbsp&nbsp</div>
  </center>
   </body>
 
 <style>
  a {text-decoration: none;}
+ 
+.ball {
+  margin-top: 50px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: cornflowerblue;
+  border: 2px solid #999;
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+}
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
  
 .button {
   background-color: rgba(21,84,131,1);
